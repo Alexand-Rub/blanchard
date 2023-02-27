@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="js/choices.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/opener.js"></script>
@@ -59,7 +68,32 @@
         <div class="container">
             <form class="filter">
                 <h2 class="title">Галерея</h2>
+                <p class="filter__sutitle">Фильтр:</p>
+                <select name="" id="" class="filter__art">
+                    <option value="">Живопись</option>
+                    <option value="">Рисунок</option>
+                    <option value="">Скульптура</option>
+                </select>
+                <input type="radio" name="century" id="century-19" checked>
+                <label class="filter__century" for="century-19">XIX век</label>
+                <input type="radio" name="century" id="century-20">
+                <label class="filter__century" for="century-20">XX век</label>
+                <input type="radio" name="century" id="century-21">
+                <label class="filter__century" for="century-21">Современность</label>
             </form>
+            <div class="swiper galary__swiper">
+                <div class="swiper-wrapper">
+                    <button class="swiper-slide button galary__slide galary__slide-1"></button>
+                    <button class="swiper-slide button galary__slide galary__slide-2"></button>
+                    <button class="swiper-slide button galary__slide galary__slide-3"></button>
+                    <button class="swiper-slide button galary__slide galary__slide-4"></button>
+                    <button class="swiper-slide button galary__slide galary__slide-5"></button>
+                    <button class="swiper-slide button galary__slide galary__slide-6"></button>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next arror"></div>
+                <div class="swiper-button-prev arror"></div>
+            </div>
         </div>
     </section>
 </body>
