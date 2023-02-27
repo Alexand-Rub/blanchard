@@ -24,6 +24,12 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
 /* Сбросс стилей */
 
 /* Общие стили */
@@ -40,12 +46,6 @@ section {
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
-}
-
-.text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
 }
 
 .card__img {
@@ -118,6 +118,7 @@ section {
 }
 
 .button {
+    padding: 0;
     border: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,17 +126,22 @@ section {
     background-color: transparent;
 }
 
-.arror {
+.arrow-dark,
+.arrow-light {
+    display: block;
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    background-color: #666666;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.arror::after {
-    content: '';
-    width: 12px;
-    height: 7px;
-    background-image: url(../img/arrow-white.svg);
+.arrow-dark {
+    background-color: #666666;
+    background-image: url('../img/arrow-white.svg');
+}
+.arrow-light {
+    background-color: #ECECEC;
+    background-image: url('../img/arrow-black.svg');
 }
 
 /* Общие стили */
@@ -387,6 +393,11 @@ section {
     padding-bottom: 41px;
 }
 
+.about__text {
+    font-size: 14px;
+    line-height: 28px;
+}
+
 /* Секция о нас */
 
 /* Секция галерея */
@@ -543,6 +554,11 @@ section {
     transform: rotate(90deg);
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
 .galary__card {
     z-index: 20;
     position: absolute;
@@ -595,3 +611,144 @@ section {
 }
 
 /* Секция галерея */
+
+/* Секция каталог */
+
+.catalog__text {
+    display: none;
+}
+
+.period {
+    margin-bottom: 50px;
+}
+
+.period__yers {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    border-top: 1px solid #CACACA;
+}
+.period__item:last-child .period__yers {
+    border-bottom: 1px solid #CACACA;
+}
+.period__item_open .period__yers {
+    border-top: 1px solid #7943A4;
+    border-bottom: 1px solid #7943A4;
+}
+
+.period__item .arrow-light {
+    transform: translateY(2px);
+    transition: transform .5s ease-in-out;
+}
+
+.period__item_open .arrow-light {
+    transform: rotate(180deg) translateY(-2px);
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
+    background-color: #D1A9F0;
+}
+
+.period__wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+.period__item_open .period__wrapper {
+    height: 808px;
+}
+
+.period__people {
+    padding-top: 27px;
+    padding-bottom: 26.5px;
+}
+
+.period__person:not(:last-child) {
+    margin-bottom: 13.6px;
+}
+
+.period__person button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.empty {
+    padding-top: 25px;
+    display: flex;
+}
+
+.period__item_open .period__wrapper_empty {
+    height: 180px;
+}
+
+.empty__img {
+    flex: none;
+    margin-right: 25px;
+    padding: 4px;
+    width: 90px;
+    height: 130px;
+    border: 2px solid #999999;
+}
+.empty__img div {
+    width: 100%;
+    height: 100%;
+    background-color: #999999;
+}
+
+.empty__title {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.empty__text {
+    margin-bottom: 5px;
+}
+
+.to-galary {
+    color: #9D5CD0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.bio__card {
+    display: none;
+}
+.bio__card_open {
+    display: block;
+}
+
+.bio__card .card__img {
+    margin-bottom: 21px;
+    height: 181px;
+}
+
+.bio__card-1 .bio__img {
+    background-image: url(../img/catalog/catalog-1.jpg);
+}
+
+.bio__title {
+    margin-bottom: 6px;
+}
+
+.bio__time {
+    margin-bottom: 14px;
+}
+
+.bio__none .card__img {
+    background-image: url(../img/catalog/catalog-none.jpg);
+}
+.bio__none .card__text {
+    margin-bottom: 6px;
+}
+
+
+/* Секция каталог */
