@@ -49,9 +49,24 @@ section {
 }
 
 .card__img {
+    position: relative;
     height: 200px;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
+}
+
+.card__clouse {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/card-clouse.svg);
+}
+
+.card__block {
+    min-height: 400px;
+    background-color: white;
 }
 
 .card__title {
@@ -60,11 +75,24 @@ section {
     line-height: 33px;
 }
 
+.card__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .card__place,
 .card__time {
+    color: #999999;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+}
+
+.card__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .link {
@@ -369,6 +397,10 @@ section {
     background-image: url(../img/galary/galary-bg.jpg);
 }
 
+.galary .container {
+    position: relative;
+}
+
 .filter {
     margin-bottom: 36.5px;
 }
@@ -510,4 +542,56 @@ section {
     left: calc(50% - 65px);
     transform: rotate(90deg);
 }
+
+.galary__card {
+    z-index: 20;
+    position: absolute;
+    top: 245px;
+    left: 15px;
+    right: 15px;
+    display: none;
+    color: #333333;
+}
+
+.galary__card_open {
+    display: block;
+}
+
+.galary__card::before {
+    content: '';
+    z-index: -1;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.galary__card-1 .card__img {
+    background-image: url(../img/galary/galary-1.jpg);
+}
+.galary__card-2 .card__img {
+    background-image: url(../img/galary/galary-2.jpg);
+}
+.galary__card-3 .card__img {
+    background-image: url(../img/galary/galary-3.jpg);
+}
+.galary__card-4 .card__img {
+    background-image: url(../img/galary/galary-4.jpg);
+}
+.galary__card-5 .card__img {
+    background-image: url(../img/galary/galary-5.jpg);
+}
+.galary__card-6 .card__img {
+    background-image: url(../img/galary/galary-6.jpg);
+}
+
+.galary__card .card__block {
+    padding: 17px 20px;
+}
+.galary__card .card__title {
+    margin-left: -2px;
+    margin-bottom: -1px;
+}
+.galary__card .card__time {
+    margin-bottom: 10px;
+}
+
 /* Секция галерея */
