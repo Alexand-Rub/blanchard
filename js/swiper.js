@@ -10,5 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         loop: true,
     });
+
+    var swiper = new Swiper(".event__swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
 })
 

@@ -95,6 +95,12 @@ section {
     line-height: 22px;
 }
 
+.card__link {
+    padding-bottom: 3px;
+    color: #9D5CD0;
+    border-bottom: 1px solid #9D5CD0;
+}
+
 .link {
     width: 50px;
     height: 50px;
@@ -750,5 +756,66 @@ section {
     margin-bottom: 6px;
 }
 
-
 /* Секция каталог */
+
+/* Секция события */
+
+.event__swiper {
+    padding-bottom: 30px;
+}
+
+.event__slide-1 .card__img {
+    background-image: url('../img/event/event-1.jpg');
+}
+.event__slide-2 .card__img {
+    background-image: url('../img/event/event-2.jpg');
+}
+.event__slide-3 .card__img {
+    background-image: url('../img/event/event-3.jpg');
+}
+.event__slide-4 .card__img {
+    background-image: url('../img/event/event-4.jpg');
+}
+.event__slide-5 .card__img {
+    background-image: url('../img/event/event-5.jpg');
+}
+
+.event__slide .card__block {
+    position: relative;
+    padding: 16px 18px 0px 22px;
+    min-height: 483px;
+    border: 1px solid #CACACA;
+}
+
+.event__slide .card__time,
+.event__slide .card__place {
+    text-align: right;
+}
+
+.event__slide .card__place {
+    margin-bottom: 11px;
+}
+
+.event__slide .card__title {
+    margin-bottom: 4px;
+}
+
+.event__slide .card__link {
+    position: absolute;
+    bottom: 50px;
+    left: 28px;
+}
+
+.event__swiper .swiper-pagination {
+    bottom: -3px;
+}
+.swiper-pagination-bullet {
+    margin: 0 8px !important;
+    width: 9px;
+    height: 9px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #666666;
+}
+
+/* Секция события */
