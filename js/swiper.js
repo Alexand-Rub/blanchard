@@ -16,5 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
         el: ".swiper-pagination",
       },
     });
+
+    var swiper = new Swiper(".projects__swiper", {
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+    });
 })
 

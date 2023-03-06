@@ -545,18 +545,23 @@ section {
     bottom: 5px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.galary__next,
+.galary__prev {
     top: auto;
     bottom: 0;
 }
 
-.swiper-button-next {
+.galary__next {
     right: calc(50% - 65px);
+}
+.galary__prev {
+    left: calc(50% - 65px);
+}
+
+.swiper-button-next {
     transform: rotate(-90deg);
 }
 .swiper-button-prev {
-    left: calc(50% - 65px);
     transform: rotate(90deg);
 }
 
@@ -819,3 +824,95 @@ section {
 }
 
 /* Секция события */
+
+/* Секция проекты */
+
+.projects__text {
+    margin-right: -1px;
+    margin-bottom: 57px;
+}
+
+.info {
+    display: inline-block;
+    margin-bottom: -3px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/info.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.projects__link {
+    color: #9D5CD0;
+}
+
+.projects__subtitle {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.projects__swiper {
+    padding-right: 48px;
+    padding-left: 47px;
+}
+
+.projects__slide {
+    height: 65px;
+    border: 1px solid #CACACA;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+
+.projects__slide-1 {
+    background-size: 104.74px 25.94px;
+    background-image: url('../img/projects/projects__slide-1.png');
+}
+.projects__slide-2 {
+    background-size: 141.15px 24.44px;
+    background-image: url('../img/projects/projects__slide-2.png');
+}
+.projects__slide-3 {
+    background-size: 116.71px 27.01px;
+    background-image: url('../img/projects/projects__slide-3.png');
+}
+.projects__slide-4 {
+    background-size: 53.3px 36.83px;
+    background-image: url('../img/projects/projects__slide-4.png');
+}
+.projects__slide-5 {
+    background-size: 74.97px 36.83px;
+    background-image: url('../img/projects/projects__slide-5.png');
+}
+.projects__slide-6 {
+    background-size: 109.2px 30.33px;
+    background-image: url('../img/projects/projects__slide-6.png');
+}
+.projects__slide-7 {
+    background-size: 123.93px 29.9px;
+    background-image: url('../img/projects/projects__slide-7.png');
+}
+.projects__slide-8 {
+    background-size: 80.17px 35.1px;
+    background-image: url('../img/projects/projects__slide-8.png');
+}
+.projects__slide-9 {
+    background-size: 99.23px 26.87px;
+    background-image: url('../img/projects/projects__slide-9.png');
+}
+
+.projects__next,
+.projects__prev {
+    top: 39px;
+}
+.projects__next {
+    right: 0;
+}
+.projects__prev {
+    left: 0;
+}
+
+/* Секция проекты */
+
