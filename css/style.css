@@ -102,6 +102,7 @@ section {
 }
 
 .link {
+    display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 100px;
@@ -124,6 +125,7 @@ section {
 }
 
 .button {
+    display: inline-block;
     padding: 0;
     border: none;
     background-position: center;
@@ -177,7 +179,7 @@ section {
     background-image: url('../img/burger.svg');
 }
 
-.logo {
+header .logo {
     position: absolute;
     top: 12.1px;
     left: 50%;
@@ -916,3 +918,123 @@ section {
 
 /* Секция проекты */
 
+/* Секция магазин */
+
+.shop .container {
+    margin-bottom: 17px;
+}
+
+.shop__title {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.shop__addres {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.shop__form {
+    margin-bottom: 20px;
+}
+
+.shop__inp {
+    padding: 10px 23px;
+    width: 100%;
+    border: 1px solid #333333;
+    border-radius: 100px;
+}
+.shop__inp::placeholder {
+    color: #999999;
+}
+
+.shop__inp {
+    margin-bottom: 20px;
+}
+
+.shop__submit {
+    padding: 10px 35px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9D5CD0;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px
+}
+
+.shop__conection {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.shop__link {
+    width: 50px;
+    height: 50px;
+    border: 100px;
+}
+.shop__link:not(:last-child) {
+    margin-right: 16px;
+}
+
+.wt {
+    background-image: url(../img/whatsap.svg);
+}
+.tg {
+    background-image: url(../img/telegram.svg);
+}
+.map {
+    width: 100%;
+    height: 320px;
+}
+
+.ymaps-2-1-79-gotoymaps__container,
+.ymaps-2-1-79-gototech,
+.ymaps-2-1-79-copyright__content-cell,
+.ymaps-2-1-79-copyright__link,
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
+
+.ymaps-2-1-79-ground-pane {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+
+/* Секция магазин */
+
+/* Подвал */
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__list {
+    margin-bottom: 17px;
+    display: flex;
+}
+
+.vk {
+    margin-right: 20px;
+    background-image: url(../img/vk.svg);
+}
+
+.ok {
+    background-image: url(../img/ok.svg);
+}
+
+/* Подвал */

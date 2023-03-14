@@ -13,6 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=44ea7b62-f9a7-4b14-a8e0-c2176b64c525" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/opener.js"></script>
@@ -372,18 +375,36 @@
                 <div class="swiper-button-prev projects__prev arrow-light"></div>
             </div>
         </section>
-        <section class="shop">
-            <h2 class="shop__title">Шоурум № 4</h2>
-            <p class="shop__addres">Леонтьевский переулок, дом 5/1</p>
-            <form method="post" class="shop__form">
-                <input class="shop__inp" type="text" name="name" placeholder="Имя*">
-                <input class="shop__inp" type="tel" name="tel" placeholder="Телефон*">
-                <button class="shop__submit" type="submit">Заказать</button>
-            </form>
-            <p class="shop__conection">Связаться в один клик</p>
-            <a href="#" class="shop__link"></a>
-            <a href="#" class="shop__link tg"></a>
-        </section>
     </div>
+        <section class="shop">
+            <div class="container">
+                <h2 class="shop__title">Шоурум № 4</h2>
+                <p class="shop__addres">Леонтьевский переулок, дом 5/1</p>
+                <form method="post" class="shop__form">
+                    <input class="shop__inp" type="text" name="name" placeholder="Имя*">
+                    <input class="shop__inp" type="tel" name="tel" placeholder="Телефон*">
+                    <button class="shop__submit button" type="submit">Заказать</button>
+                </form>
+                <p class="shop__conection">Связаться в один клик</p>
+                <a href="#" class="shop__link wt link"></a>
+                <a href="#" class="shop__link tg link"></a>
+            </div>
+            <div class="map" id="map">
+                
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link link vk"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link link ok"></a>
+                    </li>
+                </ul>
+                <div class="logo"></div>
+            </div>
+        </footer>
 </body>
 </html>
