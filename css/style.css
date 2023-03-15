@@ -638,6 +638,7 @@ header .logo {
 .period__yers {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
     width: 100%;
     text-align: left;
@@ -650,6 +651,7 @@ header .logo {
     border-bottom: 1px solid #CACACA;
 }
 .period__item_open .period__yers {
+    color: #7943A4;
     border-top: 1px solid #7943A4;
     border-bottom: 1px solid #7943A4;
 }
@@ -854,7 +856,8 @@ header .logo {
     font-size: 18px;
 }
 
-.projects__swiper {
+.projects__swiper-block {
+    position: relative;
     padding-right: 48px;
     padding-left: 47px;
 }
@@ -907,7 +910,8 @@ header .logo {
 
 .projects__next,
 .projects__prev {
-    top: 39px;
+    top: 50%;
+    margin-top: -15px;
 }
 .projects__next {
     right: 0;
@@ -964,6 +968,9 @@ header .logo {
     color: #9D5CD0;
     border: 2px solid #9D5CD0;
     border-radius: 100px
+}
+.shop__submit-more {
+    display: none;
 }
 
 .shop__conection {
@@ -1038,3 +1045,305 @@ header .logo {
 }
 
 /* Подвал */
+
+@media(min-width: 768px) {
+    /* Общие */
+
+    .container {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    section {
+        padding-top: 93px;
+    }
+    .title {
+        margin-bottom: 30px;
+        font-size: 48px;
+    }
+
+    /* Общие */
+    /* Шарка */
+
+    .header, .header__buttom {
+        height: 100px;
+    }
+    .burger {
+        top: 37px;
+        width: 36px;
+        height: 27px;
+    }
+    .logo {
+        width: 187.6px;
+        height: 42px;
+    }
+    .header .logo {
+        top: 29px;
+    }
+    .search__opener,
+    .search__submit {
+        width: 27px;
+        height: 27px;
+    }
+    /* Шарка */
+    /* Секция hero */
+    .hero {
+        padding-top: 205px;
+        padding-bottom: 114px;
+    }
+    .hero .container {
+        display: block;
+    }
+    .hero__title,
+    .hero__subtitle {
+        text-align: left;
+    }
+    .hero__title {
+        margin-bottom: -10px;
+        font-size: 72px;
+        line-height: 98px;
+        letter-spacing: 1.7px;
+    }
+    .hero__subtitle {
+        margin-bottom: 133px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: .45px;
+    }
+    .hero__subscription {
+        display: inline-block;
+        padding: 27px 37px;
+        font-size: 18px;
+    }
+
+    /* Секция hero */
+    /* Секция о нас */
+
+    .about {
+        padding-bottom: 70px;
+    }
+    .about__text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    /* Секция о нас */
+    /* Галерея */
+    .galary {
+        padding-bottom: 80px;
+    }
+    .filter {
+        width: 281px;
+        margin-bottom: 46px;
+    }
+    .filter__sutitle {
+        margin-bottom: 10px;
+    }
+    .choices {
+        margin-bottom: 46px;
+    }
+    .galary__swiper {
+        padding-top: 60.5px;
+        padding-bottom: 0;
+    }
+    .galary__prev,
+    .galary__next,
+    .swiper-pagination {
+        bottom: auto;
+        right: auto;
+    }
+    .galary__prev,
+    .galary__next {
+        top: 22px;
+    }
+    .galary__next {
+        left: 101px;
+    }
+    .galary__prev {
+        left: 0;
+    }
+    .swiper-pagination {
+        top: 8px;
+        left: 45px;
+        width: 40px;
+    }
+    .galary__slide {
+        height: 330px;
+    }
+    
+    /* Галерея */
+    /* Каталог */
+
+    .catalog__text {
+        margin-bottom: 20px;
+        display: block;
+    }
+    .period__yers {
+        padding: 31px 0 33px 0;
+        font-size: 24px;
+    }
+    .period__yers .arrow-light {
+        width: 50px;
+        height: 50px;
+        background-size: 19px 11px;
+    }
+    .period__people {
+        padding-top: 32px;
+    }
+    .period__people {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .period__item_open .period__wrapper {
+        height: 338px;
+    }
+    .period__people {
+        height: 350px;
+    }
+    .period__person {
+        margin-right: 58px;
+        max-width: 200px;
+        min-width: 179px;
+    }
+
+    .bio__card .card__img {
+        height: 419px;
+    }
+
+    .bio__title,
+    .bio__time {
+        margin-bottom: 7px;
+    }
+
+    /* Каталог */
+    /* События */
+
+    .event__swiper {
+        padding-bottom: 40px;
+    }
+    .event__slide .card__block {
+        padding: 13px 18px 0px 33px;
+    }
+    .event__slide .card__place {
+        margin-bottom: 5px;
+    }
+    .event__slide .card__title,
+    .event__text {
+        max-width: 240px;
+    }
+    .event__slide .card__link {
+        left: 33px;
+    }
+
+    /* События */
+    /* Проекты */
+
+    .projects {
+        padding-bottom: 80px;
+    }
+    .projects__text {
+        margin-right: 5px;
+        margin-bottom: 30px;
+    }
+    .add-link {
+        display: none;
+    }
+    .projects__subtitle {
+        margin-bottom: 31.5px;
+        font-size: 24px;
+    }
+    .projects__swiper-block {
+        padding-right: 53px;
+        padding-left: 53px;
+    }
+    .projects__slide {
+        height: 106px;
+    }
+    .projects__slide-1 {background-size: 209.84px 52px;}
+    .projects__slide-2 {background-size: 216.84px 38px;}
+    .projects__slide-3 {background-size: 195px 45px;}
+    .projects__slide-4 {background-size: 104.96px 72.53px;}
+    .projects__slide-5 {background-size: 121px 59px;}
+    .projects__slide-6 {background-size: 176px 48px;}
+    .projects__slide-7 {background-size: 194px 47px;}
+    .projects__slide-8 {background-size: 143px 62px;}
+    .projects__slide-9 {background-size: 182px 49px;}
+
+    /* Проекты */
+    /* Магазин */
+
+    .shop {
+        padding-top: 46px;
+        border-top: 1px solid #CACACA;
+    }
+    .shop .container {
+        padding-bottom: 22px;
+    }
+    .shop__title {
+        margin-bottom: 13px;
+        font-size: 24px;
+    }
+    .shop__addres {
+        margin-bottom: 30px;
+    }
+    .shop__form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .shop__inp {
+        margin-bottom: 11.5px;
+        padding: 15px 24px;
+        max-width: 324px;
+    }
+    .shop__inp:first-child {
+        margin-right: 20px;
+    }
+    .shop__submit {
+        flex: auto;
+        display: block;
+        padding: 14.7px 0 15px 0;
+        max-width: 317px;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: .4px;
+    }
+    .shop__submit-more {
+        display: inline;
+    }
+    .shop__conection {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .shop__link {
+        width: 40px;
+        height: 40px;
+    }
+    .map {
+        height: 701px;
+        border-top: 1px solid #CACACA;
+    }
+
+    /* Магазин */
+    /* Подвал */
+
+    .footer {
+        padding-top: 40px;
+    }
+    .footer .container {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .footer .logo {
+        width: 175px;
+        height: 39.9px;
+        transform: translateY(-10px);
+    }
+    .footer__link {
+        width: 60px;
+        height: 60px;
+    }
+    /* Подвал */
+}
